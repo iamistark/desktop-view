@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+main{
+  width: 65%;
+  height: 15%;
+  margin: 35px auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right:10px ;
+  border: 15px solid black;
+  
+  display:grid;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-columns: repeat(2, 1fr) 250px ;
+  grid-gap: 20px;
+  border-top-left-radius: 15px ;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+}
+.div1{
+  background-color: rgb(161, 210, 229);
+ 
+
+}
+.div2{
+  background-color: rgb(173, 167, 167);
+  grid-column: 2/ span 3;
+}
+
+.div3{
+  background-color:  gray;
+  /* grid-row: 2/3; */
+  grid-column: 1/ span 3;
+  
+}
+.div4{
+  background-color:  skyblue;
+  grid-row: 3/4;
+  
+}
+.div5{
+  background-color:  skyblue;
+  grid-column:3/4;
+}
+.div6{
+  background-color:  skyblue;
+  grid-row: 3/4 ;
+}
